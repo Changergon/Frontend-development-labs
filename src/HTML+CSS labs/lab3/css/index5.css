@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрируем содержимое галереи */
+    list-style-type: none;
+    padding: 0;
+    margin: 100px auto; /* Центрируем галерею */
+    width: 1000px; /* Фиксированная ширина для галереи */
+}
+
+.gallery li {
+    flex: 0 1 calc(33.33% - 10px); /* 3 колонки с отступом */
+    margin: 5px;
+    display: flex; /* Используем flex для выравнивания */
+    justify-content: center; /* Центрируем содержимое списка */
+}
+
+.gallery img {
+    max-width: 100%; /* Ограничиваем ширину изображения до 100% */
+    height: auto; /* Сохраняем пропорции изображения */
+    border: 0.4rem black solid; /* Черная граница */
+    box-sizing: border-box; /* Граница включается в размеры элемента */
+    object-fit: contain; /* Масштабирует изображение, сохраняя пропорции */
+    margin: auto; /* Центрируем изображение внутри элемента списка */
+    padding: 10px;
+    background-color: white;
+}
