@@ -1,5 +1,10 @@
 body {
     font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 article {
@@ -9,6 +14,7 @@ article {
     line-height: 1.5;
     padding: 20px;
     color: white;
+    width: 1000px;
 }
 
 h1 {
