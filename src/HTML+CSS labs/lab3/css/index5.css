@@ -13,27 +13,27 @@ h1 {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем содержимое галереи */
+    justify-content: center;
     list-style-type: none;
     padding: 0;
-    margin: 100px auto; /* Центрируем галерею */
-    width: 1000px; /* Фиксированная ширина для галереи */
+    margin: 100px auto;
+    width: 1000px;
 }
 
 .gallery li {
-    flex: 0 1 calc(33.33% - 10px); /* 3 колонки с отступом */
+    flex: 0 1 calc(33.33% - 10px);
     margin: 5px;
-    display: flex; /* Используем flex для выравнивания */
-    justify-content: center; /* Центрируем содержимое списка */
+    display: flex;
+    justify-content: center;
 }
 
 .gallery img {
-    max-width: 100%; /* Ограничиваем ширину изображения до 100% */
-    height: auto; /* Сохраняем пропорции изображения */
-    border: 0.4rem black solid; /* Черная граница */
-    box-sizing: border-box; /* Граница включается в размеры элемента */
-    object-fit: contain; /* Масштабирует изображение, сохраняя пропорции */
-    margin: auto; /* Центрируем изображение внутри элемента списка */
+    max-width: 100%;
+    height: auto;
+    border: 0.4rem black solid;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin: auto;
     padding: 10px;
     background-color: white;
 }
