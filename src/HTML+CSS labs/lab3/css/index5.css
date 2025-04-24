@@ -11,29 +11,31 @@ h1 {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 100px auto;
     width: 1000px;
+    text-align: center;
+    font-size: 0;
 }
 
 .gallery li {
-    flex: 0 1 calc(33.33% - 10px);
+    display: inline-block;
+    width: calc(33.33% - 10px);
     margin: 5px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
 }
 
 .gallery img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border: 0.4rem black solid;
     box-sizing: border-box;
-    object-fit: contain;
-    margin: auto;
     padding: 10px;
     background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
 }

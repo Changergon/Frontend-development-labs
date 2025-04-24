@@ -4,13 +4,13 @@ section {
     border: 2px dotted #5ebf5e;
     padding: 20px 0;
     box-sizing: border-box;
-    margin: auto;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
 }
 
 h1 {
     margin: 0;
     text-align: center;
-
 }
 
 p {
@@ -19,12 +19,4 @@ p {
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
