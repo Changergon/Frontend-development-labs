@@ -5,11 +5,6 @@ body {
     background-color: #cfcfcf;
 }
 
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-
 .gallery {
     list-style-type: none;
     padding: 0;
