@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="/src/KP Web/1.css">
+</head>
+<body>
+<header>
+    Блог
+</header>
+<div class="container">
+    <main>
+        <div class="posts-container">
+            <h2>Записи</h2>
+            <div id="posts-list">
+                <article>
+                    <h1>Хоббит, или Туда и обратно</h1>
+                    <div class="post-meta">
+                        <span>Категория: Литература</span> |
+                        <span>Автор: Джон Толкин</span>
+                    </div>
+                    <div class="post-content">
+                        <p>Жил-был в норе под землей хоббит. Не в какой-то там мерзкой грязной сырой норе, где со всех сторон торчат хвосты червей и противно пахнет плесенью, но и не в сухой песчаной голой норе, где не на что сесть и нечего съесть. Нет, нора была хоббичья, а значит – благоустроенная.</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="delete-btn">Удалить</button>
+                        <button class="archive-btn">Архив</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="form-section">
+            <h2>Создать запись</h2>
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="author">Автор</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Заголовок</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Категория</label>
+                    <input type="text" id="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Содержание</label>
+                    <textarea id="content" required></textarea>
+                </div>
+                <button type="submit" class="create-btn">Создать</button>
+            </form>
+        </div>
+        <div class="archive-section">
+            <h2>Архив</h2>
+            <ol class="archive-list" id="archive-list">
+            </ol>
+        </div>
+    </aside>
+</div>
+<script src="/src/KP Web/1.js"></script>
+</body>
+</html>
