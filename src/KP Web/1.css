@@ -32,8 +32,10 @@ main {
 
 aside {
     flex: 1;
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
     padding: 1rem;
-    border-left: 1px solid #ddd;
+    margin: 1rem;
 }
 
 .posts-container h2 {
@@ -48,7 +50,7 @@ article {
     border-radius: 15px;
     padding: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    box-shadow: 0.5em 1em 0.5em 0 rgba(64, 73, 59, 0.281);
 }
 
 article h1 {
