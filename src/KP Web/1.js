@@ -34,20 +34,27 @@ document.addEventListener('DOMContentLoaded', function() {
     function createPost(title, author, category, content) {
         const article = document.createElement('article');
 
+
+        const paragraphs = content.split('\n').filter(p => p.trim() !== '');
+        let contentHTML = '';
+        paragraphs.forEach(p => {
+            contentHTML += `<p>${p}</p>`;
+        });
+
         article.innerHTML = `
-            <h1>${title}</h1>
-            <div class="post-meta">
-                <span>Категория: ${category}</span> | 
-                <span>Автор: ${author}</span>
-            </div>
-            <div class="post-content">
-                <p>${content}</p>
-            </div>
-            <div class="post-actions">
-                <button class="delete-btn">Удалить</button>
-                <button class="archive-btn">Архив</button>
-            </div>
-        `;
+        <h1>${title}</h1>
+        <div class="post-meta">
+            <span>Категория: ${category}</span> | 
+            <span>Автор: ${author}</span>
+        </div>
+        <div class="post-content">
+            ${contentHTML || '<p>Нет содержания</p>'}
+        </div>
+        <div class="post-actions">
+            <button class="delete-btn">Удалить</button>
+            <button class="archive-btn">Архив</button>
+        </div>
+    `;
 
         postsList.appendChild(article);
     }

@@ -105,16 +105,19 @@ article h1 {
     font-weight: bold;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 0.5rem;
     border: none;
     border-bottom: 1px solid #40493B;
+    background: transparent;
 }
 
 .form-group textarea {
     min-height: 100px;
     resize: vertical;
+    border-bottom: 1px solid #40493B;
 }
 
 .create-btn {
